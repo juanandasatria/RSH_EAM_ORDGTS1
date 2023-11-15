@@ -1,0 +1,51 @@
+{
+  "welcomeFile": "index.html",
+  "routes": [
+    {
+      "path": "/sap/opu/odata",
+      "target": {
+        "type": "destination",
+        "name": "DTN",
+        "entryPath": "/sap/opu/odata"
+      },
+      "description": "TN-DEV description"
+    },
+    {
+      "path": "/sap/bc/ui5_ui5",
+      "target": {
+        "type": "destination",
+        "name": "DTN",
+        "entryPath": "/sap/bc/ui5_ui5"
+      },
+      "description": "TN-DEV description"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/resources/sap/rsh/eam/lib/common",
+      "target": {
+        "type": "destination",
+        "name": "DTN",
+        "entryPath": "/sap/bc/ui5_ui5/sap/rsh_eam_libs1",
+        "preferLocal": true
+      },
+      "description": "sap/rsh/eam/lib/common Reuse Library"
+    }
+  ]
+}

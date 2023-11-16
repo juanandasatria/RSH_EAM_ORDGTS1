@@ -584,6 +584,31 @@
 										<m:Text id="idSchedulingType" text="{SchedulingTypeName}" wrapping="{= ${UIModel>/condensedModeActive} ? false : true }"/>
 									</table:template>
 								</table:Column>
+								<table:Column id="idSerialNumberColumn" label="{/#C_RSHOrdersAndOperationsType/SerialNumber/@sap:label}" visible="false" sortProperty="SerialNumber"
+									tooltip="{/#C_RSHOrdersAndOperationsType/SerialNumber/@sap:quickinfo}" width="20%">
+									<table:template>
+										<m:Label id="idSerialNumberLabel" text="{SerialNumber}"/>
+									</table:template>
+								</table:Column>
+								<table:Column id="idMaterialColumn" label="{/#C_RSHOrdersAndOperationsType/Material/@sap:label}" visible="false" sortProperty="Material"
+									tooltip="{/#C_RSHOrdersAndOperationsType/Material/@sap:quickinfo}" width="20%">
+									<table:template>
+										<m:Label id="idMaterialLabel" text="{Material}"/>
+									</table:template>
+								</table:Column>
+								<table:Column id="idCustomerColumn" label="{/#C_RSHOrdersAndOperationsType/Customer/@sap:label}" visible="false" sortProperty="Customer"
+									tooltip="{/#C_RSHOrdersAndOperationsType/Customer/@sap:quickinfo}" width="20%">
+									<table:template>
+										<m:Label id="idCustomerLabel" text="{Customer}"/>
+									</table:template>
+								</table:Column>
+								<table:Column id="idOpPersRespNameColumn" label="{/#C_RSHOrdersAndOperationsType/OperationPersonRespName/@sap:label}" visible="false" sortProperty="OperationPersonRespName"
+									tooltip="{/#C_RSHOrdersAndOperationsType/OperationPersonRespName/@sap:quickinfo}" width="20%">
+									<table:template>
+										<m:Label id="idOpPersRespNameLabel" text="{OperationPersonRespName}"/>
+									</table:template>
+								</table:Column>
+								
 							</table:columns>
 						</table:TreeTable>
 					</table>
